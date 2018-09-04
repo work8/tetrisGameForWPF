@@ -8,7 +8,12 @@
        WindowStyle="None" AllowsTransparency="True" Background="Transparent" Title="MainWindow" Height="537.684" Width="821.507">
     <Border CornerRadius="50 50 50 50" BorderThickness="5" BorderBrush="DarkBlue" Background="LightSkyBlue" >
         <Grid>
-            <Frame></Frame>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <TextBlock TextWrapping="Wrap" Text="Start" Margin="0" Grid.Row="1" d:LayoutOverrides="Height" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" FontWeight="Bold" FontFamily="Papyrus" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"/>
+
         </Grid>
     </Border>
 </Window>

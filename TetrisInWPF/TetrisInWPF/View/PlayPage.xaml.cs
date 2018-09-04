@@ -23,5 +23,15 @@ namespace TetrisInWPF.View
         {
             InitializeComponent();
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Page_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

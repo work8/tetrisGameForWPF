@@ -23,5 +23,11 @@ namespace TetrisInWPF
         {
             InitializeComponent();
         }
+
+        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            View.PlayPage page=new View.PlayPage();
+            this.Content = page;
+        }
     }
 }

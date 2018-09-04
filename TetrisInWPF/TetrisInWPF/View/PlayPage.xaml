@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:TetrisInWPF.View"
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="600"
-      Title="PlayPage">
+      Title="PlayPage" Loaded="Page_Loaded" KeyDown="Page_KeyDown" >
 
-    
-        <Grid Background="LightGoldenrodYellow" Opacity="80">
+
+    <Grid Background="LightGoldenrodYellow" Opacity="80">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="10*"/>
@@ -18,15 +18,18 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="*"/>
-            
+
         </Grid.ColumnDefinitions>
         <Border  Grid.Row="1" Grid.Column="0">
-            <Canvas Background="Black"></Canvas>
+            <Canvas Background="#FF191919"/>
         </Border>
+        <Rectangle Fill="#FF669568" Margin="0" Stroke="Black" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="#FF8EB990" Margin="0" Stroke="Black" Grid.ColumnSpan="2" Grid.Row="2"/>
+        <TextBlock x:Name="score" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,20,0" TextWrapping="Wrap" Text="Score" FontStretch="Condensed" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Malgun Gothic" RenderTransformOrigin="0,0" Foreground="#FFD6D5D5" Grid.Row="2" d:LayoutOverrides="Height" VerticalAlignment="Center"/>
 
 
 
 
     </Grid>
-    
+
 </Page>
